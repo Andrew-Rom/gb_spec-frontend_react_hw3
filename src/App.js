@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./components/TemperatureConverter.css";
+import "./components/ToDoList.css";
+import TemperatureConverter from "./components/TemperatureConverter";
+import TemperatureConverterMono from "./components/TemperatureConverterMono";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Tasks">
+      <div className="FirstTask">
+        <TemperatureConverter />
+        <TemperatureConverterMono />
+      </div>
+      <div className="SecondTask">
+        <ToDoList />
+      </div>
     </div>
   );
 }
